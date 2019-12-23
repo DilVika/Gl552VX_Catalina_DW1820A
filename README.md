@@ -1,0 +1,1 @@
+# Gl552VX_Catalina_DW1820A
