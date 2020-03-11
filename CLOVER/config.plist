@@ -231,7 +231,7 @@
 					<key>Comment</key>
 					<string>_STA</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>FB1fU1RBAA==</data>
 					<key>Replace</key>
@@ -241,7 +241,7 @@
 					<key>Comment</key>
 					<string>_CRS</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>FBFfQ1JTAA==</data>
 					<key>Replace</key>
@@ -336,6 +336,40 @@
 					<data>U00ApFNEU01oaWprpABbgg==</data>
 					<key>Replace</key>
 					<data>U00AoAgKEaRTRFNNpABbgg==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _CRS to XCRS (I2C)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X0NSUw==</data>
+					<key>Replace</key>
+					<data>WENSUw==</data>
+					<key>TgtBridge</key>
+					<data>RVRQRA==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _STA to XSTA (I2C)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1NUQQ==</data>
+					<key>Replace</key>
+					<data>WFNUQQ==</data>
+					<key>TgtBridge</key>
+					<data>R1BJMA==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change USTP to XSTP (I2C)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>VVNUUAg=</data>
+					<key>Replace</key>
+					<data>WFNUUAg=</data>
 				</dict>
 			</array>
 		</dict>
@@ -438,7 +472,7 @@
 		<key>#XMPDetection</key>
 		<string>-1</string>
 		<key>Arguments</key>
-		<string>igfxrst=1 -cdfon brcmfx-driver=1 brcmfx-country=#a</string>
+		<string>igfxrst=1 -cdfon brcmfx-country=#a bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -713,16 +747,8 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)</key>
 			<dict>
-				<key>AAPL,slot-name</key>
-				<string>WLAN</string>
-				<key>compatible</key>
-				<string>pci14e4,4353</string>
-				<key>device_type</key>
-				<string>Airport Extreme</string>
-				<key>model</key>
-				<string>DW1820A (BCM4350) 802.11ac Wireless</string>
-				<key>name</key>
-				<string>Airport</string>
+				<key>pci-aspm-default</key>
+				<integer>0</integer>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
