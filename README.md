@@ -51,6 +51,11 @@ OR
 2. AppleHDA Patcher:
 https://olarila.com/forum/viewtopic.php?t=6528
 
+# Update:
+* Leave the L\E with origina kexts and move all kexts to C\K\O.
+* run `  sudo softwareupdate -i -a --restart `
+* After Some Reboot. Install all kext to right postition.
+
 
 # Special Thanks: 
 This was forked from
