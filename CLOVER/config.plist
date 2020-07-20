@@ -111,7 +111,7 @@
 					<key>Comment</key>
 					<string>change HECI to IMEI</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>SEVDSQ==</data>
 					<key>Replace</key>
@@ -121,7 +121,7 @@
 					<key>Comment</key>
 					<string>change GFX0 to IGPU</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>R0ZYMA==</data>
 					<key>Replace</key>
@@ -191,7 +191,7 @@
 					<key>Comment</key>
 					<string>change _REG to XREG in EC0</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>X1JFRwKgCw==</data>
 					<key>Replace</key>
@@ -301,7 +301,7 @@
 					<key>Comment</key>
 					<string>Change H_EC to EC</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>SF9FQw==</data>
 					<key>Replace</key>
@@ -311,7 +311,7 @@
 					<key>Comment</key>
 					<string>change ECDV to EC</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>RUNEVg==</data>
 					<key>Replace</key>
@@ -482,7 +482,7 @@
 		<key>#XMPDetection</key>
 		<string>-1</string>
 		<key>Arguments</key>
-		<string>igfxrst=1 -cdfon brcmfx-country=#a</string>
+		<string>igfxrst=1 -cdfon brcmfx-country=#a </string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -728,32 +728,12 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>AAAbGQ==</data>
-				<key>disable-external-gpu</key>
-				<integer>1</integer>
-				<key>framebuffer-con0-type</key>
-				<data>AAQAAA==</data>
-				<key>framebuffer-con1-pipe</key>
-				<data>EgAAAA==</data>
-				<key>framebuffer-con2-enable</key>
-				<integer>1</integer>
-				<key>framebuffer-con2-flags</key>
-				<data>hwEAAA==</data>
-				<key>framebuffer-con2-type</key>
-				<data>AAgAAA==</data>
-				<key>framebuffer-con3-enable</key>
-				<integer>1</integer>
 				<key>framebuffer-fbmem</key>
 				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<integer>1</integer>
-				<key>framebuffer-patch1-enable</key>
-				<integer>1</integer>
-				<key>framebuffer-patch1-find</key>
-				<data>CgsDAAAHBgADAAAABAAAAA==</data>
 				<key>framebuffer-stolenmem</key>
 				<data>AAAwAQ==</data>
-				<key>framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0)</key>
 			<dict>
@@ -770,7 +750,7 @@
 				<key>pci-aspm-default</key>
 				<integer>0</integer>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3) </key>
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Internal</string>
@@ -963,13 +943,13 @@
 		<key>Scan</key>
 		<dict>
 			<key>Entries</key>
-			<false/>
+			<true/>
 			<key>Legacy</key>
-			<false/>
+			<true/>
 			<key>Linux</key>
 			<false/>
 			<key>Tool</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>ScreenResolution</key>
 		<string>1366x768</string>
@@ -1417,7 +1397,7 @@
 		<key>MLB</key>
 		<string>C027435017JHRQT11</string>
 		<key>ROM</key>
-		<data>OGbwJ4ei</data>
+		<data>NJf2vkY/</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -1573,7 +1553,7 @@
 		<key>SerialNumber</key>
 		<string>C02TD09VGTFN</string>
 		<key>SmUUID</key>
-		<string>8AC3921B-E4D2-42AC-85E6-5D367EBBB82C</string>
+		<string>C2078850-0217-41D1-9F52-A59A9C923130</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
@@ -1588,7 +1568,7 @@
 		<key>#NvidiaWeb</key>
 		<false/>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>
